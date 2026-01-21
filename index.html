@@ -4,24 +4,22 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mr.Robot | Histórico de Pesquisas</title>
+
     <style>
         :root {
             --bg: #0a0a0a;
             --card-bg: #111111;
             --text-main: #e0e0e0;
             --text-dim: #888;
-            --accent: #00ff41; 
+            --accent: #00ff41;
             --border: #222;
         }
 
         #matrix-bg {
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            inset: 0;
             z-index: -1;
-            opacity: 0.15;
+            opacity: 0.12;
         }
 
         * {
@@ -46,8 +44,8 @@
             margin-bottom: 60px;
             border-left: 4px solid var(--accent);
             padding-left: 20px;
-            background: rgba(10, 10, 10, 0.8);
-            backdrop-filter: blur(5px);
+            background: rgba(10, 10, 10, 0.85);
+            backdrop-filter: blur(6px);
         }
 
         h1 {
@@ -102,16 +100,15 @@
             padding: 20px;
             text-decoration: none;
             color: inherit;
-            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: all 0.25s ease;
             position: relative;
             overflow: hidden;
-            backdrop-filter: blur(2px);
         }
 
         .card:hover {
             border-color: var(--accent);
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0, 255, 65, 0.05);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0, 255, 65, 0.06);
         }
 
         .card::before {
@@ -120,14 +117,14 @@
             right: 15px;
             top: 15px;
             color: var(--accent);
-            opacity: 0.3;
+            opacity: 0.25;
         }
 
         .card-name {
             display: block;
             font-size: 1.1rem;
             font-weight: bold;
-            margin-bottom: 5px;
+            margin-bottom: 6px;
         }
 
         .card-link {
@@ -142,115 +139,150 @@
         }
     </style>
 </head>
+
 <body>
 
-    <canvas id="matrix-bg"></canvas>
+<canvas id="matrix-bg"></canvas>
 
-    <header>
-        <h1>LABORATÓRIO DE PESQUISAS</h1>
-        <p class="description">Histórico de Pesquisas | Área de Trabalho e Estudo Universitário</p>
-        <p style="font-size: 0.7rem; color: var(--accent); margin-top: 5px;">Eli Massaqui (Mr.Robot)</p>
-        <p style="font-size: 0.5rem; color: red; margin-top: 10px;">Alguns sites funcionam melhor no modo computador - Ativar modo computador no Chrome se estiver no Celular</p>
-    </header>
+<header>
+    <h1>Laboratório de Pesquisas</h1>
+    <p class="description">Histórico de Pesquisas | Área Técnica</p>
+    <p style="font-size:0.7rem;color:var(--accent);margin-top:6px;">
+        Eli Massaqui (Mr.Robot)
+    </p>
+</header>
 
-    <main class="container">
-        <section class="category-block">
-            <h2 class="category-title">Hardware &amp; Backend</h2>
-            <div class="grid">
-                <a href="https://arduino-cli.vercel.app/" target="_blank" class="card">
-                    <span class="card-name">arduino-cli</span>
-                    <span class="card-link">arduino-cli.vercel.app</span>
-                </a>
-                <a href="https://arduino-backend-explorer.vercel.app/" target="_blank" class="card">
-                    <span class="card-name">arduino-backend-explorer</span>
-                    <span class="card-link">arduino-backend-explorer.vercel.app</span>
-                </a>
-                <a href="https://bibliotecas-arduino.vercel.app/" target="_blank" class="card">
-                    <span class="card-name">Bibliotecas Arduino</span>
-                    <span class="card-link">bibliotecas-arduino.vercel.app</span>
-                </a>
-                <a href="https://pyfirmata2.vercel.app/" target="_blank" class="card">
-                    <span class="card-name">pyfirmata2</span>
-                    <span class="card-link">pyfirmata2.vercel.app</span>
-                </a>
-                <a href="https://compiladores-pi.vercel.app/" target="_blank" class="card">
-                    <span class="card-name">Compiladores PI</span>
-                    <span class="card-link">compiladores-pi.vercel.app</span>
-                </a>
-            </div>
-        </section>
+<main class="container">
 
-        <section class="category-block">
-            <h2 class="category-title">Gráficos &amp; WebGL</h2>
-            <div class="grid">
-                <a href="https://three-js-roadmap.vercel.app/" target="_blank" class="card">
-                    <span class="card-name">Three.js Roadmap</span>
-                    <span class="card-link">three-js-roadmap.vercel.app</span>
-                </a>
-                <a href="https://cg-lab-theta.vercel.app/" target="_blank" class="card">
-                    <span class="card-name">CG Lab</span>
-                    <span class="card-link">cg-lab-theta.vercel.app</span>
-                </a>
-                <a href="https://wandi-webgl.vercel.app/" target="_blank" class="card">
-                    <span class="card-name">Wandi WebGL</span>
-                    <span class="card-link">wandi-webgl.vercel.app</span>
-                </a>
-                <a href="https://vite-react-three-rho-14.vercel.app/" target="_blank" class="card">
-                    <span class="card-name">Vite React Three</span>
-                    <span class="card-link">vite-react-three-rho-14.vercel.app</span>
-                </a>
-            </div>
-        </section>
+    <!-- PROJECTS -->
+    <section class="category-block">
+        <h2 class="category-title">Projects</h2>
+        <div class="grid">
 
-        <section class="category-block">
-            <h2 class="category-title">Identidade Core</h2>
-            <div class="grid">
-                <a href="https://eli-massaqui-red.vercel.app/" target="_blank" class="card">
-                    <span class="card-name">Eli Massaqui</span>
-                    <span class="card-link">eli-massaqui-red.vercel.app</span>
-                </a>
-            </div>
-        </section>
-    </main>
+            <a href="https://wandi-webgl.vercel.app/" target="_blank" class="card">
+                <span class="card-name">Wandi WebGL</span>
+                <span class="card-link">wandi-webgl.vercel.app</span>
+            </a>
 
-    <script>
-        const canvas = document.getElementById('matrix-bg');
-        const ctx = canvas.getContext('2d');
+            <a href="https://simulation-one.vercel.app/" target="_blank" class="card">
+                <span class="card-name">Simulation</span>
+                <span class="card-link">simulation-one.vercel.app</span>
+            </a>
 
-        let width = canvas.width = window.innerWidth;
-        let height = canvas.height = window.innerHeight;
+            <a href="https://wandi3d.vercel.app/" target="_blank" class="card">
+                <span class="card-name">Wandi3D</span>
+                <span class="card-link">wandi3d.vercel.app</span>
+            </a>
 
-        const columns = Math.floor(width / 20);
-        const drops = [];
+            <a href="https://lab-lyart-five.vercel.app/" target="_blank" class="card">
+                <span class="card-name">LAB</span>
+                <span class="card-link">lab-lyart-five.vercel.app</span>
+            </a>
 
-        for (let i = 0; i < columns; i++) {
-            drops[i] = 1;
-        }
+            <a href="https://compiladores-hazel.vercel.app/" target="_blank" class="card">
+                <span class="card-name">Compiladores</span>
+                <span class="card-link">compiladores-hazel.vercel.app</span>
+            </a>
 
-        function draw() {
-            ctx.fillStyle = 'rgba(10, 10, 10, 0.05)';
-            ctx.fillRect(0, 0, width, height);
+        </div>
+    </section>
 
-            ctx.fillStyle = '#00ff41';
-            ctx.font = '15px monospace';
+    <!-- HARDWARE -->
+    <section class="category-block">
+        <h2 class="category-title">Hardware & Backend</h2>
+        <div class="grid">
 
-            for (let i = 0; i < drops.length; i++) {
-                const text = Math.random() > 0.5 ? "0" : "1";
-                ctx.fillText(text, i * 20, drops[i] * 20);
+            <a href="https://arduino-cli.vercel.app/" target="_blank" class="card">
+                <span class="card-name">arduino-cli</span>
+                <span class="card-link">arduino-cli.vercel.app</span>
+            </a>
 
-                if (drops[i] * 20 > height && Math.random() > 0.975) {
-                    drops[i] = 0;
-                }
-                drops[i]++;
+            <a href="https://arduino-backend-explorer.vercel.app/" target="_blank" class="card">
+                <span class="card-name">arduino-backend-explorer</span>
+                <span class="card-link">arduino-backend-explorer.vercel.app</span>
+            </a>
+
+            <a href="https://bibliotecas-arduino.vercel.app/" target="_blank" class="card">
+                <span class="card-name">Bibliotecas Arduino</span>
+                <span class="card-link">bibliotecas-arduino.vercel.app</span>
+            </a>
+
+            <a href="https://pyfirmata2.vercel.app/" target="_blank" class="card">
+                <span class="card-name">pyfirmata2</span>
+                <span class="card-link">pyfirmata2.vercel.app</span>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- WEBGL -->
+    <section class="category-block">
+        <h2 class="category-title">Gráficos & WebGL</h2>
+        <div class="grid">
+
+            <a href="https://three-js-roadmap.vercel.app/" target="_blank" class="card">
+                <span class="card-name">Three.js Roadmap</span>
+                <span class="card-link">three-js-roadmap.vercel.app</span>
+            </a>
+
+            <a href="https://cg-lab-theta.vercel.app/" target="_blank" class="card">
+                <span class="card-name">CG Lab</span>
+                <span class="card-link">cg-lab-theta.vercel.app</span>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- CORE -->
+    <section class="category-block">
+        <h2 class="category-title">Identidade Core</h2>
+        <div class="grid">
+
+            <a href="https://eli-massaqui-red.vercel.app/" target="_blank" class="card">
+                <span class="card-name">Eli Massaqui</span>
+                <span class="card-link">eli-massaqui-red.vercel.app</span>
+            </a>
+
+        </div>
+    </section>
+
+</main>
+
+<script>
+    const canvas = document.getElementById('matrix-bg');
+    const ctx = canvas.getContext('2d');
+
+    let width, height, columns, drops;
+
+    function resize() {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+        columns = Math.floor(width / 20);
+        drops = Array(columns).fill(1);
+    }
+
+    function draw() {
+        ctx.fillStyle = 'rgba(10,10,10,0.05)';
+        ctx.fillRect(0, 0, width, height);
+
+        ctx.fillStyle = '#00ff41';
+        ctx.font = '15px monospace';
+
+        for (let i = 0; i < drops.length; i++) {
+            const text = Math.random() > 0.5 ? '0' : '1';
+            ctx.fillText(text, i * 20, drops[i] * 20);
+
+            if (drops[i] * 20 > height && Math.random() > 0.98) {
+                drops[i] = 0;
             }
+            drops[i]++;
         }
+    }
 
-        window.addEventListener('resize', () => {
-            width = canvas.width = window.innerWidth;
-            height = canvas.height = window.innerHeight;
-        });
+    resize();
+    window.addEventListener('resize', resize);
+    setInterval(draw, 50);
+</script>
 
-        setInterval(draw, 50);
-    </script>
 </body>
 </html>
